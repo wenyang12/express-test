@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test7</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div><button id="btn">获取jsonp数据</button></label></div>
+<div>输出：<span id="output"></span></div>
+<script>
+    function foo(obj) {
+        console.log('执行了foo函数：输出 %s',obj.user);
+    }
+    $('#btn').click(function() {
+        $.getJSON('http://localhost:3000/test7?callback=?',function(data) {
+            console.log(data);
+            $('#output').html(data.user);
+        })
+    });
+</script>
+<script src="http://localhost:3000/test7?callback=foo"></script>
+</body>
+</html>

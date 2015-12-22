@@ -1,0 +1,10 @@
+{
+  "name": "express-test",
+  "version": "0.0.1",
+  "main": "./app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
+    "express": "*"
+  }
+}
