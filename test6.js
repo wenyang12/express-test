@@ -21,3 +21,10 @@ app.get('/user/:id/:page', function (req, res) {
     res.end();
 });
 app.listen(3000);
+
+//On GET /user/42/3, the following is printed:
+/*
+CALLED ONLY ONCE with 42
+CALLED ONLY ONCE with 3
+although this matches
+and this matches too*/

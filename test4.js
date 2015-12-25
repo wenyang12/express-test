@@ -4,8 +4,7 @@
 /**
  * Created by Administrator on 2015/12/22.
  */
-//Methods demo
-
+//使用回调函数数组处理路由
 var express = require('express');
 var app = express();
 

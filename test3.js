@@ -7,7 +7,7 @@ var express = require('express');
 var admin = express();
 var app = express();
 
-admin.on('mount', function (parent) {//启动服务即运行
+admin.on('mount', function (parent) {//监听mount事件
     console.log('Admin Mounted');
     console.log(parent); // refers to the parent app
 });

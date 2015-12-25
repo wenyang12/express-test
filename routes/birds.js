@@ -19,3 +19,10 @@ router.get('/about', function(req, res) {
 });
 
 module.exports = router;
+
+//On GET /user/42/3, the following is printed:
+/*
+ CALLED ONLY ONCE with 42
+ CALLED ONLY ONCE with 3
+ although this matches
+ and this matches too*/

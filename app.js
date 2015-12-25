@@ -8,10 +8,11 @@ var app = express();
 
 //json类型的body  如果用户通过post发送的数据，则采用json解析
 app.use(bodyParser.json());
-//query string类型body
-app.use(bodyParser.urlencoded({//通过get请求url附带数据发送过来的解析方式
+//query string类型body 通过get请求url附带数据发送过来的解析方式
+app.use(bodyParser.urlencoded({
     extended: false
 }));
+
 //静态文件目录 请求一个文件时，优先到这个目录里找，找到返回
 app.use(express.static(__dirname + '/public')); //把这个目录下的所有文件暴露给http接口
 

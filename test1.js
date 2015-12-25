@@ -1,6 +1,7 @@
 /**
  * Created by Administrator on 2015/12/22.
  */
+//app.mountpath demo
 var express = require('express');
 
 var app = express(); // the main app
